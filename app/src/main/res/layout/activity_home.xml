@@ -10,7 +10,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="110dp"
         android:background="#4b0082"
         android:id="@+id/firstOpcion">
 
@@ -47,10 +47,12 @@
     </RelativeLayout>
     
     <RelativeLayout
-        android:layout_below="@+id/firstOpcion"
+
+        android:id="@+id/segundaOpcion"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
-        android:background="#4b0082">
+        android:background="#4b0082"
+        android:layout_marginTop="1dp">
 
         <ImageView
             android:id="@+id/contactosImg"
@@ -80,6 +82,27 @@
             android:layout_below="@+id/textoDos"
             android:layout_toEndOf="@+id/contactosImg"
             android:textColor="#FFFFFF"/>
+
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#4b0082"
+        android:layout_marginTop="1dp">
+
+        <ImageView
+            android:id="@+id/uploadImg"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/upload"
+            android:tint="#FFFFFF"
+            />
+
+
+
 
 
     </RelativeLayout>
