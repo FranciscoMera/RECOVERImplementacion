@@ -1,18 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.coffeesoftware.recover.home">
+    android:orientation="vertical"
+    tools:context="com.example.coffeesoftware.recover.home"
+    android:layout_weight="1">
 
-    <TextView
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#4b0082"
+        android:id="@+id/firstOpcion">
+
+        <ImageView
+            android:id="@+id/archivoImg"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/archivo"
+            android:tint="#FFFFFF"
+            />
+
+
+        <TextView
+            android:id="@+id/textoUno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/archivoImg"
+            android:text="Archivos"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona los archivos que deseas respaldar de tu dispositivo"
+            android:textSize="11dp"
+            android:layout_below="@+id/textoUno"
+            android:layout_toEndOf="@+id/archivoImg"
+            android:textColor="#FFFFFF"/>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_below="@+id/firstOpcion"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="100dp"
+        android:background="#4b0082">
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:id="@+id/contactosImg"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/contactos"
+            android:tint="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/textoDos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/contactosImg"
+            android:text="Contactos"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona a tus contactos de preferencia"
+            android:textSize="11dp"
+            android:layout_below="@+id/textoDos"
+            android:layout_toEndOf="@+id/contactosImg"
+            android:textColor="#FFFFFF"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
